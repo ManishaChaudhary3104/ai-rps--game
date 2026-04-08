@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaderboard</title>
+</head>
+<body>
+
+<h1>🏆 Leaderboard</h1>
+
+<table border="1">
+<tr>
+    <th>User ID</th>
+    <th>Wins</th>
+</tr>
+
+{% for row in results %}
+<tr>
+    <td>{{ row.user_id }}</td>
+    <td>{{ row.wins }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+<a href="/game">Back to Game</a>
+
+</body>
+</html>
